@@ -27,7 +27,7 @@ def parse_one_page(html):
             "score": item[5] + item[6],
         }
 def write_to_file(content):
-    with open("./Downloads/maoyan_top100.json", 'a', encoding="utf-8") as f:
+    with open("maoyan_top100.txt", 'a', encoding="utf-8") as f:
         f.write(json.dumps(content, ensure_ascii=False) + '\n')
 
 def main(offset):
