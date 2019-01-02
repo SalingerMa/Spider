@@ -11,4 +11,9 @@ import scrapy
 class TutorialItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    index = scrapy.Field()
+    image = scrapy.Field()
+    name = scrapy.Field()
+    star = scrapy.Field()
+    time = scrapy.Field()
+    score = scrapy.Field()

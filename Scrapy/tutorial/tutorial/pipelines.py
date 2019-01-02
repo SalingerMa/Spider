@@ -7,5 +7,7 @@
 
 
 class TutorialPipeline(object):
-    def process_item(self, item, spider):
-        return item
+    # def process_item(self, item, spider):
+    #     with open("result.txt", 'a', encoding="utf-8")as f:
+    #         f.write(str(item) + "\n")
+    pass
