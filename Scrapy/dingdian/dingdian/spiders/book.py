@@ -12,7 +12,7 @@ class BookSpider(scrapy.Spider):
                 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36"}
 
     def start_requests(self):
-        url = 'https://www.x23us.com/class/2_1.html'
+        url = 'https://www.x23us.com/class/3_1.html'
         yield Request(url, callback=self.parse)
 
     def parse(self, response):
@@ -27,16 +27,37 @@ class BookSpider(scrapy.Spider):
         for book in book_list:
             bookname = book.xpath(".//a[2]/text()").extract_first()
             bookurl = book.xpath(".//a[1]/@href").extract_first()
+            bookid = str(bookurl).split("/")[-1]
 
             yield Request(bookurl, callback=self.get_bookinfo, meta={
                 'bookname': bookname,
-                'bookurl': bookurl,
+                'bookid': bookid,
             })
 
     def get_bookinfo(self, response):
         bookinfo = response.xpath("//table[@bgcolor='#E4E4E4']")
-        category = bookinfo.xpath(".//tr[1]/td[1]//text()").extract_first()
+        category = bookinfo.xpath(".//tr[1]/td[1]/a/text()").extract_first()
         author = bookinfo.xpath(".//tr[1]/td[2]/text()").extract_first()
-        serialstatus =
+        serialstatus = bookinfo.xpath(".//tr[1]/td[3]/text()").extract_first()
+        serialtime = bookinfo.xpath(".//tr[2]/td[3]/text()").extract_first()
+
+        item = DingdianItem()
+        item['name'] = response.meta["bookname"]
+        item['author'] = str(author).strip()
+        item["serialstatus"] = str(serialstatus).strip()
+        item["serialtime"] = str(serialtime).strip()
+        item["category"] = category
+        item["bookid"] = response.meta["bookid"]
+
+        # yield item
+        if len(item["bookid"]) == 3:
+            bookurl = "https://www.x23us.com/html/0/%s/" % str(item["bookid"])
+        else:
+            bookurl = "https://www.x23us.com/html/%s/%s/" %(str(item["bookid"])[:2], str(item["bookid"]))
+        yield Request(bookurl, callback=self.get_chapterurl, headers=self.headers)
+
+    def get_chapterurl(self,response):
+
+
 
 

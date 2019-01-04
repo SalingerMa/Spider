@@ -14,6 +14,13 @@ BOT_NAME = 'dingdian'
 SPIDER_MODULES = ['dingdian.spiders']
 NEWSPIDER_MODULE = 'dingdian.spiders'
 
+MYSQL_HOST = '127.0.0.1'
+MYSQL_PORT = '3306'
+MYSQL_USER = 'root'
+MYSQL_PASSWORD = '123456'
+MYSQL_DB = 'company'
+
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'dingdian (+http://www.yourdomain.com)'
@@ -64,9 +71,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'dingdian.pipelines.DingdianPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   # 'dingdian.pipelines.DingdianPipeline': 300,
+   #  'dingdian.mysqlpipelines.pipelines.DingdianPinelines': 1,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
