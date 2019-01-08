@@ -1,0 +1,11 @@
+Server: ngx_openresty
+Date: Tue, 08 Jan 2019 10:05:58 GMT
+Content-Type: text/html; charset=GBK
+Cache-Control: max-age=86400
+Expires: Wed, 09 Jan 2019 04:11:37 GMT
+Last-Modified: Tue, 08 Jan 2019 04:11:37 GMT
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Nncoection: close
+Age: 21261
+Via: http/1.1 zats-other1 (zcache-other1 [cRs f ])

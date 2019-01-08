@@ -1,0 +1,21 @@
+Server: NWSs
+Date: Tue, 08 Jan 2019 10:07:44 GMT
+Content-Type: image/jpeg
+Cache-Control: max-age=315360000
+Expires: Fri, 05 Jan 2029 10:07:44 GMT
+Last-Modified: Fri, 02 Mar 2018 12:07:52 GMT
+X-Nws-Uuid-Verify: ac87f1f49ce2d54700718839c54f56cd
+Accept-Ranges: bytes
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+Access-Control-Allow-Origin: *
+Age: 70582
+Via: http/1.1 Z-bj (zcache-bj [cMsSfW]), http/1.0 Z-tl-jy (zcache-tl-jy [cHs f ])
+X-Daa-Tunnel: hop_count=7
+X-Nws-Log-Uuid: 36a8af9b-558f-452f-a03c-a38c3db99664
+X-Cache-Lookup: Hit From Upstream
+X-Cache-Lookup: Hit From Inner Cluster
+X-Cache-Lookup: Hit From Upstream
+X-Cache-Lookup: Hit From Inner Cluster
+X-Cache-Lookup: Hit From Upstream
+X-Cache-Lookup: Hit From Inner Cluster

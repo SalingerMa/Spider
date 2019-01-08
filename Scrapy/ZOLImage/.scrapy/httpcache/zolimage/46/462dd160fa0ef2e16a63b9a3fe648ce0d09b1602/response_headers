@@ -1,0 +1,15 @@
+Server: NWSs
+Date: Tue, 08 Jan 2019 10:10:23 GMT
+Content-Type: image/jpeg
+Cache-Control: max-age=315360000
+Expires: Fri, 05 Jan 2029 10:10:22 GMT
+Last-Modified: Thu, 28 Jul 2016 13:13:22 GMT
+X-Nws-Uuid-Verify: b8e62747d8ddb730589de231951d7096
+X-Nws-Log-Uuid: a26c22a2-63ce-4acd-982a-90b596149e7c
+X-Cache-Lookup: Hit From Disktank3
+X-Cache-Lookup: Hit From Inner Cluster
+X-Cache-Lookup: Hit From Upstream
+X-Cache-Lookup: Hit From Inner Cluster
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+X-Daa-Tunnel: hop_count=3
