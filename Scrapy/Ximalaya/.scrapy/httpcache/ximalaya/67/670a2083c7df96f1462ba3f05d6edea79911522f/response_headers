@@ -1,0 +1,15 @@
+Server: Tengine
+Date: Mon, 14 Jan 2019 08:44:28 GMT
+Content-Type: application/json
+Vary: Accept-Encoding
+Content-Encoding: gzip
+X-Tid: 4863749484172454080
+X-Sid: 6257915006062669566
+X-A1-Httpdns-Switch: on
+X-A1-Xdcs-Collector-Switch: on
+X-A1-Xdcs-Business-Switch: on
+X-A1-Xdcs-All-Log-Switch: on
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+Access-Control-Allow-Headers: Authorization,Content-Type,x-clamper-server-ip,X-Requested-With

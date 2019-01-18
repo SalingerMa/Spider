@@ -1,0 +1,11 @@
+Server: NWS_VCLOUD_BIGSTORAGE
+Date: Mon, 14 Jan 2019 08:59:09 GMT
+Cache-Control: max-age=600
+Expires: Mon, 14 Jan 2019 09:09:09 GMT
+Last-Modified: Tue, 28 Mar 2017 01:41:17 GMT
+Content-Type: text/plain
+X-Nws-Log-Uuid: e7070ec2-2aa1-479b-b7f0-b66ae3198b93 ce13ba5a7f06be18c481103fd0d1b07b
+X-Cache-Lookup: Hit From Disktank3
+X-Cache-Lookup: Hit From Upstream
+Access-Control-Allow-Origin: *
+X-Daa-Tunnel: hop_count=1

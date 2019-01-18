@@ -44,7 +44,8 @@ def download(url):
         pname=re.findall(req,html)
         print("正在下载视频:%s"%pname[0])
         # 下载的url 下载的地址
-        urlretrieve(purl[0],'./video/%s.mp4'%pname[0])
+        urlretrieve(purl[0],'C:\work\pictures/%s.mp4'%pname[0])
+        print('end')
 url = "http://www.pearvideo.com/category_loading.jsp?reqType=5&categoryId=9&start=1"
 
 download(url)

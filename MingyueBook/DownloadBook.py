@@ -4,11 +4,10 @@
 http://www.365if.com
 爬取【云中书库http://m.yunxs.com/】的书需要：书名的汉语拼音，例如龙族5-->"longzu5"
 """
-from urllib import parse
 import re
 import requests
 from bs4 import BeautifulSoup
-import os,sys, configparser
+import os, sys, configparser
 import random
 
 # get mingyuebook , need book's code ; like "79693" in "http://www.cyuedu.com/list/79/79693.html" ;

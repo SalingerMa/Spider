@@ -57,6 +57,7 @@ class BookSpider(scrapy.Spider):
         yield Request(bookurl, callback=self.get_chapterurl, headers=self.headers)
 
     def get_chapterurl(self,response):
+        pass
 
 
 

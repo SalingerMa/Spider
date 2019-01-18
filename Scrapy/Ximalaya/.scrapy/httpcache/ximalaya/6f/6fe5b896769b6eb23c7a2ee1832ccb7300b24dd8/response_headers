@@ -1,0 +1,10 @@
+Server: Tengine
+Date: Mon, 14 Jan 2019 08:20:48 GMT
+Content-Type: text/plain
+Last-Modified: Wed, 08 Aug 2018 02:45:18 GMT
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+Access-Control-Allow-Headers: Authorization,Content-Type,x-clamper-server-ip,X-Requested-With
+Content-Encoding: gzip
