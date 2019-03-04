@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from Spider.DownloadBook import MingYueBook
+from MingyueBook.DownloadBook import MingYueBook
 import requests
 from bs4 import BeautifulSoup
 import threadpool
@@ -21,7 +21,7 @@ class download():
 
 base_url = "http://www.cyuedu.com/quanben/1"
 bookcode = download().get_bookcode(base_url)
-pool = threadpool.ThreadPool(5)
+pool = threadpool.ThreadPool(1)
 req = threadpool.makeRequests(MingYueBook().run, bookcode)
 [pool.putRequest(r) for r in req]
 pool.wait()

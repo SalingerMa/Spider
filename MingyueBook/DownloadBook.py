@@ -9,26 +9,24 @@ import requests
 from bs4 import BeautifulSoup
 import os, sys, configparser
 import random
-
+from time import sleep
 # get mingyuebook , need book's code ; like "79693" in "http://www.cyuedu.com/list/79/79693.html" ;
 class MingYueBook():
     # 获取页面HTML的soup
-    proxies = [{'http': '119.101.113.176:9999'}, {'http': '119.101.112.48:9999'}, {'http': '111.177.168.80:9999'}]
+    # proxies = [{'http': '119.101.113.176:9999'}, {'http': '119.101.112.48:9999'}, {'http': '111.177.168.80:9999'}]
     def get_html(self, url):
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"}
-        try:
-            html = requests.get(url, headers=headers, proxies=self.proxies[0])
-        except:
-            self.proxies.remove(self.proxies[0])
-            html = requests.get(url, headers=headers, proxies=self.proxies[0])
+        html = requests.get(url, headers=headers)
         soup = BeautifulSoup(html.content, "html.parser")
+        sleep(0.3)
         return soup
     def get_config(self, option):
         iniFileUrl = r"C:\GitHub\Study\Spider\Spider.ini"
         conf = configparser.ConfigParser()  # 生成conf对象
         conf.read(iniFileUrl)  # 读取ini配置文件
-        return conf.get("DownloadBook", option)
+        # return conf.get("DownloadBook", option)
+        return r'C:\Users\mhm\Desktop\MingyueBook'
     # 将爬取内容写入文件
     def download(self, bookname, content, name):
         bookname = re.sub('\?|:|"| |\！|', "", bookname)
@@ -70,6 +68,7 @@ class MingYueBook():
             self.get_capter_info(bookname, capter)
             sys.stdout.write("\r正在下载：《%s》，已下载章节数%s/%s" % (bookname, n, key))
             n+=1
+
 
 # get YunZhongbook , need book's code ; like "longzu5" in "http://m.yunxs.com/longzu5/";
 class YunZhongBook():
