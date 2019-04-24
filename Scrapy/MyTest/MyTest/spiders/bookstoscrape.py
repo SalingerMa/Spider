@@ -25,3 +25,4 @@ class BookstoscrapeSpider(scrapy.Spider):
             next_url = links[0].url
             scrapy.Request(next_url, callback=self.parse)
 
+from scrapy.exporters import JsonItemExporter

@@ -14,8 +14,8 @@
       <file leaf-file-name="bookstoscrape.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyTest/spiders/bookstoscrape.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="675">
+              <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -23,11 +23,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lxmlhtml.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Anaconda3/envs/Anaconda_python36/Lib/site-packages/scrapy/linkextractors/lxmlhtml.py">
+      <file leaf-file-name="excelexporters.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyTest/excelexporters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="96" column="8" lean-forward="false" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+            <state relative-caret-position="225">
+              <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <folding>
+                <element signature="e#24#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exporters.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/scrapy/exporters.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="93" column="54" lean-forward="true" selection-start-line="84" selection-start-column="4" selection-end-line="93" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -47,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/MyTest/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="64" column="20" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="64" selection-end-column="20" />
+              <caret line="64" column="20" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="64" selection-end-column="20" />
               <folding>
                 <element signature="e#193#207#0" expanded="true" />
                 <element signature="e#310#1156#0" expanded="false" />
@@ -60,6 +72,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -67,6 +86,7 @@
         <option value="$PROJECT_DIR$/MyTest/settings.py" />
         <option value="$PROJECT_DIR$/MyTest/pipelines.py" />
         <option value="$PROJECT_DIR$/MyTest/spiders/bookstoscrape.py" />
+        <option value="$PROJECT_DIR$/MyTest/excelexporters.py" />
       </list>
     </option>
   </component>
@@ -125,7 +145,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -285,7 +305,7 @@
     <entry file="file://$PROJECT_DIR$/MyTest/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="64" column="20" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="64" selection-end-column="20" />
+          <caret line="64" column="20" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="64" selection-end-column="20" />
           <folding>
             <element signature="e#193#207#0" expanded="true" />
             <element signature="e#310#1156#0" expanded="false" />
@@ -295,21 +315,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/Anaconda_python36/Lib/site-packages/scrapy/linkextractors/lxmlhtml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="96" column="8" lean-forward="false" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/Anaconda_python36/Lib/site-packages/scrapy/exporters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3675">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#83#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MyTest/spiders/bookstoscrape.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="675">
+          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/Anaconda_python36/Lib/site-packages/scrapy/linkextractors/lxmlhtml.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/scrapy/exporters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="96" column="8" lean-forward="false" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+        <state relative-caret-position="332">
+          <caret line="93" column="54" lean-forward="true" selection-start-line="84" selection-start-column="4" selection-end-line="93" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyTest/excelexporters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#24#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
