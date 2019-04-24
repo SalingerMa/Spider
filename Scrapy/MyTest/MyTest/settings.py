@@ -17,6 +17,8 @@ NEWSPIDER_MODULE = 'MyTest.spiders'
 MONGO_HOST='localhost'
 MONGO_DB='tutorial'
 
+DB_URI = 'mongodb://localhost:27017/'
+DB_NAME = 'scrapy_book2'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'MyTest (+http://www.yourdomain.com)'
@@ -67,9 +69,13 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'MyTest.pipelines.MytestPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   # 'MyTest.pipelines.MytestPipeline': 300,
+   #  'MyTest.pipelines.MongoPipeline': 300,
+    'MyTest.pipelines.PriceConverterPipeline': 310,
+    'MyTest.pipelines.DuplicatesPipeline': 320,
+    'MyTest.pipelines.MongoDBPipeline': 330,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

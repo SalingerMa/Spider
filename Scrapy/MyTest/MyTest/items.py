@@ -7,7 +7,6 @@
 
 import scrapy
 
-
 class MytestItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
@@ -18,3 +17,13 @@ class BookItem(scrapy.Item):
     url = scrapy.Field()
     name = scrapy.Field()
     author = scrapy.Field()
+
+class BooksToScrapeItem(scrapy.Item):
+
+    name = scrapy.Field()
+    price = scrapy.Field()
+
+
+
+class ForeignBookItem(BooksToScrapeItem):
+    translator = scrapy.Field()
