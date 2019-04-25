@@ -18,11 +18,8 @@ class BookstoscrapeSpider(scrapy.Spider):
         # if next_page:
         #     next_page = response.urljoin(next_page)
         #     yield scrapy.Request(next_page, callback=self.parse)
-
-        le = LinkExtractor(restrict_css="ul.pager li.next")
-        links = le.extract_links(response)
-        if links:
-            next_url = links[0].url
-            scrapy.Request(next_url, callback=self.parse)
-
-from scrapy.exporters import JsonItemExporter
+        # le = LinkExtractor(restrict_css="ul.pager li.next a")
+        # links = le.extract_links(response)
+        # if links:
+        #     next_url = links[0].url
+        #     yield scrapy.Request(next_url, callback=self.parse)

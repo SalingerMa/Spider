@@ -49,6 +49,8 @@ ROBOTSTXT_OBEY = True
 #   'Accept-Language': 'en',
 #}
 
+
+
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
@@ -67,14 +69,19 @@ ROBOTSTXT_OBEY = True
 #    'scrapy.extensions.telnet.TelnetConsole': None,
 #}
 
+FEED_EXPORTERS = {
+    'excel': 'MyTest.excelexporters.ExcelExporter'
+}
+
+
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    # 'MyTest.pipelines.MytestPipeline': 300,
    #  'MyTest.pipelines.MongoPipeline': 300,
     'MyTest.pipelines.PriceConverterPipeline': 310,
-    'MyTest.pipelines.DuplicatesPipeline': 320,
-    'MyTest.pipelines.MongoDBPipeline': 330,
+    # 'MyTest.pipelines.DuplicatesPipeline': 320,
+    # 'MyTest.pipelines.MongoDBPipeline': 330,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -97,3 +104,5 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+
